@@ -179,6 +179,13 @@ tbody tr:nth-child(odd){background:#fcfbf8}
 .refs li::before{content:"▪";position:absolute;left:0;color:var(--gold)}
 
 /* next issue */
+.cta-manual{background:var(--navy-deep);color:#fff;padding:74px 0;text-align:center}
+.cta-manual h2{font-family:'Lora',serif;font-weight:600;font-size:clamp(2rem,8vw,2.8rem);color:#fff;margin:12px 0 14px}
+.cta-manual p{font-family:'Inter',sans-serif;font-weight:300;color:#d7d4cc;max-width:540px;margin:0 auto 8px;font-size:clamp(1rem,4.4vw,1.12rem)}
+.btn-download{display:inline-block;background:var(--gold);color:var(--navy-deep);font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:16px 32px;border-radius:40px;margin:22px 0 14px;transition:background .25s,transform .2s}
+.btn-download:hover{background:var(--gold-bright);transform:translateY(-2px)}
+.cta-sub{font-family:'Inter',sans-serif;font-size:.92rem;color:var(--gold-bright)!important}
+.cta-sub b{color:#fff}
 .next{background:var(--navy-deep);color:#fff;padding:70px 0 60px;text-align:center}
 .next .kicker{color:var(--gold)}
 .next h2{font-family:'Lora',serif;font-weight:600;font-size:clamp(2.2rem,10vw,3.2rem);margin:14px 0 22px}
@@ -357,6 +364,17 @@ footer{background:var(--navy);color:#cfd2da;padding:54px 22px calc(40px + env(sa
     <h4>Concepto clínico · Termogénesis inducida por la dieta</h4>
     <p>La proteína tiene un efecto térmico del 20-30 %: por cada 100 calorías consumidas, el cuerpo gasta 20-30 solo en digerirla. Los carbohidratos gastan 5-10 % y las grasas 0-3 %. Una dieta alta en proteína eleva el gasto metabólico basal de forma pasiva: un beneficio doble durante el tratamiento.</p>
   </div></div>
+</section>
+
+<!-- CTA · MANUAL NUTRICIONAL DESCARGABLE -->
+<section class="cta-manual" id="manual">
+  <div class="wrap reveal">
+    <span class="kicker">Regalo para nuestros lectores</span>
+    <h2>Manual Nutricional GLP-1</h2>
+    <p>16 páginas: base de datos de ingredientes mexicanos, 18 recetas clínicas con justificación fisiológica y protocolos contra la náusea y el estreñimiento. Totalmente gratis.</p>
+    <a class="btn-download" href="Manual-Nutricional-GLP1.pdf" target="_blank" rel="noopener" download>Descarga gratis el Manual (PDF)</a>
+    <p class="cta-sub">Y únete a la comunidad: busca <b>GLP-1 MEXICO</b> en Facebook.</p>
+  </div>
 </section>
 
 <!-- CAP 03 -->
@@ -585,7 +603,7 @@ footer{background:var(--navy);color:#cfd2da;padding:54px 22px calc(40px + env(sa
     <div class="foot-brand">CÓDIGO <b>GLP-1</b></div>
     <div class="foot-tag">Divulgación médica independiente · Hecha en México</div>
     <div class="foot-cols">
-      <div><h5>Comunidad</h5><p>Grupo de Facebook:<br>GLP-1 MEXICO<br>(búscalo por ese nombre)</p></div>
+      <div><h5>Comunidad</h5><p>Grupo de Facebook:<br>GLP-1 MEXICO<br><a href="Manual-Nutricional-GLP1.pdf" target="_blank" rel="noopener" style="color:var(--gold-bright)">Descarga el Manual (PDF)</a></p></div>
       <div><h5>Contacto</h5><p>codigoglp1@tuta.io</p></div>
       <div><h5>Aviso</h5><p>Material informativo. No sustituye consulta médica individual ni guía de prescripción.</p></div>
     </div>
