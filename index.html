@@ -618,8 +618,26 @@ footer{background:var(--navy);color:#cfd2da;padding:54px 22px calc(40px + env(sa
   function closeNav(){nav.classList.remove('open');body.style.overflow='';}
   menuBtn.addEventListener('click',openNav);
   navClose.addEventListener('click',closeNav);
-  nav.addEventListener('click',function(e){var a=e.target.closest('a');if(a){closeNav();}});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});
+
+  // Navegacion interna robusta (indice + menu): cierra el menu y baja a la seccion
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var hash = a.getAttribute('href');
+    if(!hash || hash === '#' || hash.length < 2) return;
+    var target = document.querySelector(hash);
+    if(!target) return;
+    e.preventDefault();
+    closeNav();
+    var headerH = parseInt(getComputedStyle(doc).getPropertyValue('--header-h'),10) || 60;
+    setTimeout(function(){
+      var y = target.getBoundingClientRect().top + (window.pageYOffset || doc.scrollTop) - headerH - 6;
+      window.scrollTo({ top: y < 0 ? 0 : y, behavior: prefersReduced ? 'auto' : 'smooth' });
+      if(history && history.pushState){ history.pushState(null,'',hash); }
+    }, 20);
+  });
 
   // reveal on scroll
   var items=document.querySelectorAll('.reveal');
