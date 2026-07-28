@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>customElements.define('doc-page',class extends HTMLElement{});</script>
+<style id="mobile-fix-guia">
+/* Ajustes de lectura en telefono */
+@media (max-width:700px){
+doc-page{padding:0 !important;}
+doc-page > section > div{padding:32px 20px 26px !important;height:auto !important;}
+doc-page [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important;}
+doc-page [style*="grid-template-columns:150px 1fr"]{grid-template-columns:1fr auto !important;row-gap:6px !important;}
+doc-page [style*="grid-template-columns:150px 1fr"] > *:nth-child(3n+1){grid-column:1 / -1 !important;}
+doc-page [style*="align-items:baseline"]{flex-wrap:wrap !important;}
+}
+</style>
 </head>
 <body>
 <x-dc>
