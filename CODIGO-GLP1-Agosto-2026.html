@@ -34,9 +34,25 @@ html{-webkit-text-size-adjust:100%;}
 }
 </style>
 <script>(function(){var c="/* Ajustes de lectura en telefono - CODIGO GLP-1 */\nhtml{-webkit-text-size-adjust:100%;}\n@media (max-width:700px){\n#dc-root div[style*=\"max-width: 1280px\"]{padding-left:18px !important;padding-right:18px !important;}\n#dc-root header > div{padding-left:16px !important;padding-right:16px !important;gap:10px !important;}\n#dc-root header a{gap:6px !important;}\n#dc-root header a > span{white-space:nowrap !important;font-size:16px !important;}\n#dc-root header > div > div{gap:10px !important;}\n#dc-root header > div > div > span{display:none !important;}\n#dc-root div[style*=\"minmax(\"]:not([style*=\"auto-fit\"]):not([style*=\"auto-fill\"]){grid-template-columns:1fr auto !important;column-gap:12px !important;row-gap:7px !important;}\n#dc-root div[style*=\"minmax(\"]:not([style*=\"auto-fit\"]):not([style*=\"auto-fill\"]) > *:nth-child(3n+1){grid-column:1 / -1 !important;}\n#dc-root div[style*=\"overflow-x: auto\"]{-webkit-overflow-scrolling:touch;}\n#dc-root p,#dc-root li,#dc-root td,#dc-root th,#dc-root h1,#dc-root h2,#dc-root h3{overflow-wrap:break-word;}\n}";function a(){if(document.getElementById("mobile-fix-glp1"))return;var s=document.createElement("style");s.id="mobile-fix-glp1";s.textContent=c;(document.head||document.documentElement).appendChild(s);}a();document.addEventListener("DOMContentLoaded",a);window.addEventListener("load",a);[300,1000,2500,5000].forEach(function(t){setTimeout(a,t)});})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0E2036">
+<style id="splash-fix-glp1">
+/* Portada de carga */
+html,body{background:#0E2036 !important;}
+#__bundler_loading{display:none !important;}
+#__bundler_thumbnail{background:#0E2036 !important;}
+.cgs{text-align:center;padding:0 24px;font-family:Archivo,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+.cgs-b{font-size:clamp(28px,7vw,44px);font-weight:800;letter-spacing:-.02em;color:#F7F4ED;line-height:1;white-space:nowrap;}
+.cgs-b em{font-style:normal;color:#C9A45E;}
+.cgs-s{margin-top:14px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#7E8FA3;}
+.cgs-p{margin:26px auto 0;width:min(240px,60vw);height:3px;background:rgba(201,164,94,.2);overflow:hidden;border-radius:2px;}
+.cgs-p i{display:block;width:38%;height:100%;background:#C9A45E;border-radius:2px;animation:cgsmv 1.15s cubic-bezier(.4,0,.6,1) infinite;}
+@keyframes cgsmv{0%{transform:translateX(-110%)}100%{transform:translateX(300%)}}
+@media (prefers-reduced-motion:reduce){.cgs-p i{animation:none;width:100%}}
+</style>
 </head>
 <body>
-  <div id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" sc-camel-view-box="0 0 400 300"><rect width="400" height="300" fill="#0E2036"></rect><text x="120" y="150" font-family="Archivo,Helvetica,Arial,sans-serif" font-size="46" font-weight="800" fill="#FFFFFF">CÓDIGO</text><text x="120" y="185" font-family="Archivo,Helvetica,Arial,sans-serif" font-size="46" font-weight="800" fill="#C9A45E">GLP-1</text><rect x="120" y="200" width="160" height="6" fill="#C9A45E"></rect></svg></div>
+  <div id="__bundler_thumbnail"><div class="cgs"><div class="cgs-b">CÓDIGO <em>GLP-1</em></div><div class="cgs-s">Edición Agosto 2026 · Año I · Núm. 03</div><div class="cgs-p"><i></i></div></div></div>
   <div id="__bundler_loading">Unpacking...</div>
 
   <script>
