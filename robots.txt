@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Registro de correcciones: se indexa a propósito.
+# No hay áreas privadas ni rutas que ocultar.
+
+Sitemap: https://glp1mexico.github.io/codigo-glp1/sitemap.xml
