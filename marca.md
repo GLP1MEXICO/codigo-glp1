@@ -63,6 +63,10 @@ se mide antes de publicarlo.
    La primera foto de cada número no pasa de 1440 px de ancho; las demás, de 1500 px.
 10. Ninguna cifra se sostiene en una imagen. Las fotos son de apertura y su función es
     editorial; la información la llevan las gráficas, de elaboración propia.
+11. A partir del Núm. 04 (septiembre de 2026) las aperturas de capítulo y la portada son
+    ilustraciones vectoriales SVG incrustadas en el HTML, dibujadas a partir del dato central
+    de cada reportaje, en lugar de fotografía. La tarjeta `portada-num04.jpg` reproduce esa
+    misma ilustración. Si un número vuelve a usar fotografía, aplican las reglas 9 y 10.
 
 ## Erratas
 
@@ -82,6 +86,7 @@ se mide antes de publicarlo.
 - `Guia-<Mes>-<Año>.html` — cuadernillo imprimible de la edición.
 - `portada-num<NN>.jpg` — tarjeta de 1200×630 para Open Graph.
 - `<mes>-<NN>-<tema>.webp` — fotografías de apertura de esa edición.
+- `<mes>-<año>.html` — liga corta que redirige a la edición (`agosto-2026.html`, `septiembre-2026.html`).
 - `erratas.html`, `robots.txt`, `sitemap.xml`, `marca.md` — permanentes.
 
 ## Al publicar un número nuevo
