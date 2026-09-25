@@ -67,6 +67,33 @@ se mide antes de publicarlo.
     ilustraciones vectoriales SVG incrustadas en el HTML, dibujadas a partir del dato central
     de cada reportaje, en lugar de fotografía. La tarjeta `portada-num04.jpg` reproduce esa
     misma ilustración. Si un número vuelve a usar fotografía, aplican las reglas 9 y 10.
+12. El Núm. 05 (octubre de 2026) vuelve a la fotografía, con las reglas 9 y 10. Las aperturas
+    de capítulo son a doble página: el texto va sobre azul y la foto a sangre en la otra mitad,
+    alternando el lado de un capítulo a otro. Nunca hay texto ni cifras encima de una foto. Las
+    fotos salen de Pexels (licencia libre, sin atribución obligatoria), se acredita igual al
+    fotógrafo y se marcan como «Imagen ilustrativa». La tarjeta `portada-num05.jpg` sigue la
+    misma regla: texto sobre azul a la izquierda, foto a la derecha.
+13. Las gráficas del Núm. 05 son HTML y CSS (barras, gráfica de bosque y barras apiladas), sin
+    SVG ni imágenes. Colores nuevos, solo para elementos gráficos y no para texto: `#B7C2CE`
+    (barra del comparador) y `#EFEBE1` (riel de las barras). Cada valor va escrito junto a su
+    barra, así que la gráfica nunca es la única forma de leer el dato. Para texto pequeño en
+    ámbar (las etiquetas «comunicado» y «congreso», y los avisos de corrección) se usa `#8C600F`,
+    que pasa AA sobre blanco (5.5:1), crema (5.0:1) y crema profunda (4.6:1); el ámbar de señal
+    `#9A6A12` queda para semáforos y elementos gráficos.
+14. Desde el Núm. 05, las tablas y las referencias llevan etiqueta de evidencia (estudio
+    publicado, guía o consenso, documento oficial, comunicado, congreso, prensa o fuente
+    secundaria), y cada capítulo abre con un recuadro «En 60 segundos».
+15. Nitidez en cualquier pantalla. Las fotos se preparan desde el original de mayor resolución
+    que ofrezca el banco, nunca desde una copia reducida, y cada una se publica en varios anchos
+    con `srcset` y `sizes`, para que el navegador descargue solo lo que su pantalla necesita. El
+    archivo de `src` sigue la regla 9 (la primera foto hasta 1440 px; las demás, hasta 1500 px) y
+    es el que declara `width` y `height`; las versiones de alta densidad (hasta 2400 px en las
+    aperturas) solo las piden las pantallas retina y las tabletas. La portada usa dirección de
+    arte con `<picture>`: encuadre vertical 4:5 en pantallas anchas y horizontal 5:4 en tableta
+    y celular, para que el título quede a la vista en la primera pantalla. Antes de publicar se
+    comprueba en compu, iPad y celular que ninguna foto se muestre con menos píxeles de los que
+    pide la pantalla, y la foto de portada se elige nítida en el punto de interés: una foto con
+    desenfoque de origen no se corrige con más resolución.
 
 ## Erratas
 
